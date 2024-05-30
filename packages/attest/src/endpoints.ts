@@ -22,7 +22,7 @@ export const SIGSTORE_PUBLIC_GOOD: Endpoints = {
 export const signingEndpoints = (sigstore?: SigstoreInstance): Endpoints => {
   let instance: SigstoreInstance
 
-  // And explicitly set instance type takes precedence, but if not set, use the
+  // An explicitly set instance type takes precedence, but if not set, use the
   // repository's visibility to determine the instance type.
   if (sigstore && [PUBLIC_GOOD_ID, GITHUB_ID].includes(sigstore)) {
     instance = sigstore
